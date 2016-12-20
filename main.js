@@ -18,6 +18,7 @@ $(document).ready(function(e) {
           $(this).addClass('active')
 
         } else {
+          $('#alerta').modal('show'); 
           badge.html('0');
 
         }
@@ -34,8 +35,9 @@ $(document).ready(function(e) {
             $(this).parent('li').addClass('active')
         }
         badge.html(contador + 1);
-        
         return false;
+        
+        
 
     });
 
